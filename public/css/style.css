@@ -1,0 +1,59 @@
+/* Bootstrap interfering with css */
+
+body {
+    background: #e0f2f1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* max-height: 300vh; */
+  }
+  
+  h1 {
+    color: #e0f2f1;
+  }
+  
+  .nav-wrapper {
+    background-color: #004d40 !important;
+  }
+  
+  .brand-logo {
+    margin-left: 15px;
+    color: #e0f2f1;
+  }
+  
+  .card-panel {
+    margin-top: 30px;
+    border-radius: 5px;
+    padding-bottom: 50vh !important;
+  }
+  .poster-title {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .trader-title {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .trader-button {
+    margin: 5px;
+    color: #00695c;
+    border-radius: 5px;
+    color: #e0f2f1;
+    background-color: #00695c;
+    padding: 3px;
+    font-size: larger;
+  }
+  
+  .home-page-title {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+  }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Listings Page</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+      media="screen"
+      title="no title"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- materialize icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header>
+    <nav>
+      <style>
+        .brand-logo {
+          margin-left: 15px;
+        }
+      </style>
+      <div class="nav-wrapper teal">
+        <a href="/" class="brand-logo">TradeUp</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="all_categories">Catagories</a></li>
+          <li><a href="all_products">Products</a></li>
+          <!-- <li><a href="listing_form">Listing</a></li> -->
+          <!-- <li><a href="/">Home</a></li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="all_categories">Catagories</a></li>
+      <li><a href="all_products">Products</a></li>
+      <li><a href="listing_form">List Item</a></li>
+      <!-- <li><a href="/">Home</a></li> -->
+    </ul>
+  </header>
+
+  <body>
+    <!-- parallax -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="/images/nomad1.jpeg" /></div>
+    </div>
+
+    <div class="container hidden">
+        <div class="welcome">
+            <style>
+              .welcome {
+                overflow: visible;
+                margin-top: -40vh;
+              }
+              .welcome-title h1 {
+                color: #15a19a;
+              }
+            </style>
+            <div class="row">
+              <div class="col-md-4 col-sm-2"></div>
+              <div class="welcome-title">
+                <h1>Post an Item</h1>
+              </div>
+            </div>
+      <div class="row top-30">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2">
+          <a class="btn btn-light" href="/all_products">See All Products</a>
+        </div>
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2">
+          <a class="btn btn-light" href="/all_categories">See All Categories</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form id="listing">
+              <style>
+                  .form-group:nth-child(2) {
+                      margin-top: 25vh;
+                  }
+              </style>
+            <div class="form-group">
+              <label for="title">Title:</label>
+              <input
+                placeholder="Enter Name of Product"
+                type="text"
+                class="form-control"
+                id="title"
+              />
+              <br />
+              <label for="body">Description:</label>
+              <textarea
+                placeholder="Describe Your Product in Detail"
+                class="form-control"
+                rows="10"
+                id="body"
+              ></textarea>
+              <div class="form-group">
+                <label for="category">Select Category:</label>
+                <select class="custom-select" id="categories"> </select>
+              </div>
+              <br />
+              <button type="submit" class="btn btn-success submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Custom Script -->
+    <script src="js/listing_form.js" type="text/javascript"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- materialize script -->
+    <script type="text/javascript" src="js/materilize.js"></script>
+    <!-- materialize script -->
+    <script type="text/javascript" src="js/materilize.js"></script>
+  </body>
+
+  <!-- footer -->
+  <footer class="footer text-center">
+    <style>
+      .footer {
+        margin-top: 20vh;
+      }
+    </style>
+    <h5>TradeUp 2020 | TheNomads</h5>
+  </footer>
+</html>

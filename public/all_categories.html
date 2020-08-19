@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Categories Page</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="/public/css/style.css" />
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- materialize icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<header>
+  <nav>
+    <style>
+      .brand-logo {
+        margin-left: 15px;
+      }
+    </style>
+    <div class="nav-wrapper teal">
+      <a href="/" class="brand-logo">TradeUp</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="all_categories">Catagories</a></li>
+        <li><a href="all_products">Products</a></li>
+        <!-- <li><a href="listing_form">Listing</a></li> -->
+        <!-- <li><a href="/">Home</a></li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="all_categories">Catagories</a></li>
+    <li><a href="all_products">Products</a></li>
+    <li><a href="listing_form">List Item</a></li>
+    <!-- <li><a href="/">Home</a></li> -->
+  </ul>
+</header>
+
+<body>
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="/images/nomad1.jpeg" /></div>
+  </div>
+
+  <div class="container">
+    <div class="welcome">
+      <style>
+        .welcome {
+          overflow: visible;
+          margin-top: -40vh;
+        }
+
+        .welcome-title h1 {
+          color: #15a19a;
+        }
+
+        .category-container {
+          margin-top: 20vh;
+        }
+      </style>
+      <div class="row">
+        <div class="col-md-4 col-sm-2"></div>
+        <div class="welcome-title">
+          <h1>Select a Category</h1>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-3 col-sm-3"></div>
+        <div class="col-md-2 col-sm-2">
+          <a class="btn btn-light" href="/all_products">See All Products</a>
+        </div>
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-2 col-sm-2">
+          <a class="btn btn-light" href="/listing_form">Post An Item</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="category-container">
+            <h1 class="text-center">Categories</h1>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th># of Items</th>
+                  <th>Filter By Category</th>
+                  <th>Add Item</th>
+                </tr>
+              </thead>
+              <!-- possibly remove category input form -->
+              <tbody>
+                <tr id="form-row">
+                  <form id="category-form">
+                    <!-- <td colspan="4">
+                      <input placeholder="Enter a new category" id="category-name" type="text" />
+                    </td>
+                    <td><button type="submit" class="btn btn-success">Create Category</button>
+                    </td> -->
+                  </form>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="js/category.js" type="text/javascript"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <!-- materialize script -->
+    <script type="text/javascript" src="js/materilize.js"></script>
+
+    <!-- Bootstrap and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+<!-- footer -->
+<footer class="footer text-center">
+  <style>
+    .footer {
+      margin-top: 20vh;
+    }
+  </style>
+  <h5>TradeUp 2020 | TheNomads</h5>
+</footer>
+
+</html>
